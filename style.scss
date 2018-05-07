@@ -246,6 +246,11 @@ nav {
   border-bottom: 1px solid $lightGray;
 }
 
+.posts > .post p {
+  max-height: 3em;
+  overflow: hidden;
+}
+
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
