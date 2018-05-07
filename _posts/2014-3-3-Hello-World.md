@@ -1,10 +1,18 @@
 ---
 layout: post
-title: You're up and running!
+title: Translating a WordPress Plugin
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+To translate a plugin (and ensure nothing gets overwritten on a plugin update!) WordPress now provides an easy way to add plugin and theme translations. Within the wp-content folder one can now add a plugins and themes directory, if they don’t already exist. These folders will contain the completed translations for any plugins/themes required and they will not be touched when the extensions are updated.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+To translate a plugin we can use Poedit (the free version works just fine). The steps below should be all that are required to generate a shiny new .po and .mo file:
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+1. Within Poedit, Click File > New from POT/PO file…
+2. Choose your translation language
+3. Translate each string using either the bottom boxes to enter your own translations or the recommendations in the sidebar provided by Poedit
+4. Click File > Save, change the filename to reflect your plugin and adding the country code at the end of the filename, this is important! (e.g. woocommerce-fr_FR.po)
+5. If a .mo file is not automatically generated when the .po file is saved you can do this by clicking File > Compile to MO. This should be named the same as your .po file
+6. FTP these files into the directory required as shown above. In this examplke we have translated the plugin WooCommerce, therefore the once uploaded to the appropriate directory the filepaths will be wp-content/languages/plugins/woocommerce-fr_FR.po and wp-content/languages/plugins/woocommerce-fr_FR.mo
+7. Change the language on your WordPress site in the settings and your translations should appear like magic
+
+One thing to notice (with WooCommerce at least) is that there can be a delay on the translation appearing. It seems WooCommerce specifically handles some translation features itself and so doesn’t instantly display the update. For other plugins tested this worked immediately, however.
