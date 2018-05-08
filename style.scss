@@ -254,6 +254,10 @@ nav {
   border-bottom: 1px solid $lightGray;
 }
 
+.posts > .post p {
+  position: relative;
+}
+
 .posts > .post p:after {
   position: absolute;
   bottom: 0;
