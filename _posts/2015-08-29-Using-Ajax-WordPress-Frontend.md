@@ -34,14 +34,14 @@ function my_action_callback() {\n
 And our JS file simply grabs the values we passed and calls our action passing in any data we require:
 
 <code>
-jQuery( document ).ready( function( $ ) {
-  var data = {
-    'action': 'my;\_action',
-		'whatever': ajax\_object.we\_value
-	};
-	jQuery.post( ajax\_object.ajax\_url, data, function( response ) {
-		alert( 'Got this from the server: ' + response );
-	});
+jQuery( document ).ready( function( $ ) {\n
+  var data = {\n
+    'action': 'my;_action',\n
+		'whatever': ajax_object.we_value\n
+	};\n
+	jQuery.post( ajax_object.ajax_url, data, function( response ) {\n
+		alert( 'Got this from the server: ' + response );\n
+	});\n
 });
 </code>
 
