@@ -3,7 +3,7 @@ layout: post
 title: Translating a WordPress Plugin
 ---
 
-To translate a plugin (and ensure nothing gets overwritten on a plugin update!) WordPress now provides an easy way to add plugin and theme translations. Within the wp-content folder one can now add a plugins and themes directory, if they don’t already exist. These folders will contain the completed translations for any plugins/themes required and they will not be touched when the extensions are updated.
+To add translations and ensure nothing gets overwritten on a plugin update WordPress now provides us with an easy method. Within the wp-content folder one can now add a plugins and/or themes directory, if they don’t already exist. These folders will contain the completed translations for any plugins/themes required and they will not be altered when the extensions are updated.
 
 To translate a plugin we can use Poedit (the free version works just fine). The steps below should be all that are required to generate a shiny new .po and .mo file:
 
