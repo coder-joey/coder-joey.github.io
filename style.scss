@@ -206,6 +206,10 @@ pre {
   font-weight: 300;
   font-size: 36px;
   letter-spacing: 1px;
+
+  @include mobile {
+    font-size: 30px;
+  }
 }
 
 .site-description {
