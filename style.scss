@@ -254,12 +254,6 @@ nav {
   border-bottom: 1px solid $lightGray;
 }
 
-.posts > .post .entry {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 70px;
-}
-
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
