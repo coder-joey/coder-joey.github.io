@@ -113,6 +113,9 @@ img {
 pre {
   background: #000;
   color: #fff;
+  padding: 10px;
+  font-family: monospace;
+  overflow: scroll;
 }
 
 // Fixes images in popup boxes from Google Translate
