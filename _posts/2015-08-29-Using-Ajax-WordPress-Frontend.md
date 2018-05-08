@@ -36,7 +36,7 @@ function my_action_callback() {
 And our JS file simply grabs the values we passed and calls our action passing in any data we require:
 
 ``
-jQuery( document ).ready( function( $ ) {
+<pre>jQuery( document ).ready( function( $ ) {
   var data = {
     'action': 'my;_action',
 		'whatever': ajax_object.we_value
@@ -44,7 +44,7 @@ jQuery( document ).ready( function( $ ) {
 	jQuery.post( ajax_object.ajax_url, data, function( response ) {
 		alert( 'Got this from the server: ' + response );
 	});
-});
+});</pre>
 ``
 
 If your alert box shows only a 0 then your action is not being called. Check your hooks are firing and all function names are correct.
