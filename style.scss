@@ -254,20 +254,6 @@ nav {
   border-bottom: 1px solid $lightGray;
 }
 
-.posts > .post p {
-  position: relative;
-}
-
-.posts > .post p:after {
-  position: absolute;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  content: "";
-  background: linear-gradient(to top, rgba(255,255,255, 1) 20%, rgba(255,255,255, 0) 80% );
-  pointer-events: none;
-}
-
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
