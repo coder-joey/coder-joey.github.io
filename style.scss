@@ -253,6 +253,18 @@ nav {
 // .main
 //
 
+.container .post {
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.center .post .entry {
+  @include mobile {
+    text-align: left;
+  }
+}
+
 .posts > .post {
   padding-bottom: 1em;
   border-bottom: 1px solid $lightGray;
@@ -297,6 +309,9 @@ nav {
 a.back {
   float: left;
   padding-right: 20px;
+  @include mobile {
+    float: none;
+  }
 }
 
 a.email {
