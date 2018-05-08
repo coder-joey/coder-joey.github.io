@@ -4,10 +4,10 @@ title: Using AJAX on the WordPress Frontend
 ---
 
 There are a few helpful things to bear in mind when using ajax on the frontend:
+- Actions must be hooked up before the ‘wp’ hook (I usually run them on ‘init’)
+- The ajaxurl javascript global may not be defined and so you need to do this yourself
+- There are two hooks to use for the ajax call
 
-Actions must be hooked up before the ‘wp’ hook (I usually run them on ‘init’)
-The ajaxurl javascript global may not be defined and so you need to do this yourself
-There are two hooks to use for the ajax call
 This code example is a good place to start (tweaked slightly from the codex). Firstly, we enqueue our JS file making sure we define any variables needed (ajaxurl is essential). Then we hook up our ajax method twice (these actions run before the ‘wp’ hook remember) and die to finish:
 
 <pre>
