@@ -16,7 +16,7 @@ The “-b” is short for “branch” and allows us to “checkout” and creat
 Commits can be made on this branch as per normal but all changes will not affect the master branch. If you need to switch between branches you can use the “checkout” command:
 
 <code>
-$ git checkout master\n
+$ git checkout master<br />
 $ git checkout branchname
 </code>
 
@@ -25,7 +25,7 @@ This allows work to be carried out in multiple branches simultaneously without a
 When you are ready to merge your branch into master (making sure everything is working as expected) simply run:
 
 <code>
-$ git checkout master\n
+$ git checkout master<br />
 $ git merge hotfix
 </code>
 
