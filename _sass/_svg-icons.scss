@@ -2,6 +2,8 @@
   width: 60px;
   height: 60px;
   display: inline-block;
+  background-repeat: no-repeat;
+  background-size: auto;
 
   &.email {
     background-image: url(https://raw.githubusercontent.com/coder-joey/coder-joey.github.io/master/images/mail.png);
