@@ -254,18 +254,10 @@ nav {
   border-bottom: 1px solid $lightGray;
 }
 
-.posts > .post p {
+.posts > .post .entry {
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  line-height: 1em;
-  max-height: 3em;
-}
-
-.posts > .post p:after{
-  content: '...';
+  max-height: 70px;
 }
 
 .posts > .post:last-child {
