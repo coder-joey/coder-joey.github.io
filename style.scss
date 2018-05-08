@@ -259,6 +259,10 @@ nav {
   overflow: hidden;
 }
 
+.posts > .post p:after{
+  content: '...';
+}
+
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
