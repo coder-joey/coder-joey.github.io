@@ -18,9 +18,9 @@ Whenever I setup a new local site I stick to the same pattern. I allow Local to 
 - Now the database is in place we need the content pulled in. This is simply a case of navigating to the sites wp-content directory and dropping in all that is required from the live site (be careful of mu-plugins as some hosts like WPEngine use certain plugins that won’t play nice on a local setup).
 - I also run a query to add a new admin user for myself as I like all my local installs to use the same login details (it makes things simple!). To do this I visit the database in sequel pro (link found in Local) and run the following (replacing databasename with the database name and checking the wp_users table for the next available user ID)
 
-```INSERT INTO `databasename`.`wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('1', 'admin', MD5('password'), 'admin', 'admin@local.com', '', '2011-06-07 00:00:00', '', '0', 'admin');
-INSERT INTO `databasename`.`wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES (NULL, '1', 'wp_capabilities', 'a:1:{s:13:"administrator";s:1:"1";}');
-INSERT INTO `databasename`.`wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES (NULL, '1', 'wp_user_level', '10');```
+<code>INSERT INTO 'databasename'.'wp_users' ('ID', 'user_login', 'user_pass', 'user_nicename', 'user_email', 'user_url', 'user_registered', 'user_activation_key', 'user_status', 'display_name') VALUES ('1', 'admin', MD5('password'), 'admin', 'admin@local.com', '', '2011-06-07 00:00:00', '', '0', 'admin');
+INSERT INTO 'databasename'.'wp_usermeta' ('umeta_id', 'user_id', 'meta_key', 'meta_value') VALUES (NULL, '1', 'wp_capabilities', 'a:1:{s:13:"administrator";s:1:"1";}');
+INSERT INTO 'databasename'.'wp_usermeta' ('umeta_id', 'user_id', 'meta_key', 'meta_value') VALUES (NULL, '1', 'wp_user_level', '10');</code>
 
 You should now have an exact copy of your live site on your local machine with your own admin user.
 
