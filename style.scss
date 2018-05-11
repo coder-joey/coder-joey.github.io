@@ -185,7 +185,7 @@ pre {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 2px solid $orange;
 
   @include mobile {
     text-align: center;
@@ -288,7 +288,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 1em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $orange;
 }
 
 .posts > .post:last-child {
