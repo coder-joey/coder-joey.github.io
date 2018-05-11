@@ -217,6 +217,11 @@ pre {
   right: 0;
   width: 80px;
   height: 80px;
+  cursor: pointer;
+
+  &:hover, &:active {
+    opacity: 0.6;
+  }
 }
 
 .site-info {
