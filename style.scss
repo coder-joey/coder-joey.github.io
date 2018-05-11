@@ -131,6 +131,20 @@ pre {
 .date {
   font-style: italic;
   color: $gray;
+  text-align: center;
+
+  img {
+    width: 80px;
+    border-radius: 50%;
+  }
+  span {
+    position: relative;
+    top: -30px;
+    @include mobile {
+      display: block;
+      top: 0;
+    }
+  }
 }
 
 // Specify the color of the selection
