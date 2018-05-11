@@ -51,7 +51,7 @@ h1 {
     color: $black;
   }
   &:hover, &:active {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 }
 
