@@ -113,6 +113,11 @@ strong, b {
 
 img {
   max-width: 100%;
+
+  &.404 {
+    width: 300px;
+    margin: 15px 0;
+  }
 }
 
 pre {
