@@ -30,7 +30,7 @@ Within my plugin I have an aptly named __tests__ directory which has the followi
     }
 }
 </pre>
-At the time of writing, the latest versions of Codeception, PHPUnit and PHPUnitWrapper dont play nice together so I have my PHPUnit version rolled back a little bit until this is patched.
+At the time of writing, the latest versions of Codeception, PHPUnit and PHPUnitWrapper were not playing nice together so I have my PHPUnit version rolled back a little bit until this is patched.
 
 I also have a little script which just pulls in the current version of ChromeDriver and moves it to my vendor/bin directory (this will be created in the next step!) and runs ChromeDriver (not yet needed and will be mentioned later!)
 My `run.sh` script looks like this (depending on your system and current version you can alter the URL as required):
