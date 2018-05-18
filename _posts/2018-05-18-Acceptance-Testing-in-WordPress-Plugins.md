@@ -9,7 +9,7 @@ This may take a little time to first get into place but being able to run a coup
 Think pre-release, you need to check your plugin is compatible with the last few versions of WordPress and another plugin (in our case WooCommerce). 
 We have approximately 50 tests we were manually performing over multiple versions of each plugin - a very, very time consuming, monotonous process.
 
-We had a look at some different options but settled on (codeception)[https://codeception.com/] in the end as the documentation is great, it offers a wide variety of options and the setup seemed less of a headache than others.
+We had a look at some different options but settled on [codeception](https://codeception.com/) in the end as the documentation is great, it offers a wide variety of options and the setup seemed less of a headache than others.
 There is plenty of information out there about spinning this up for any software you want to write tests for so this is just a quick look at my setup and what it allows me to do.
 
 Within my plugin I have an aptly named __tests__ directory which has the following composer.json to pull in everything I need:
@@ -117,7 +117,7 @@ vendor/bin/codecept run acceptance
 
 This will run all of the tests found within the acceptance directory (I believe one is placed here by default?) and should give you a clear indication of whether everything is setup right.
 
-So, the tests...the tests are written in a lovely format that is so easy to read (but there is a tonne of stuff you can do (check this out)[https://codeception.com/docs/03-AcceptanceTests]).
+So, the tests...the tests are written in a lovely format that is so easy to read (but there is a tonne of stuff you can do [check this out](https://codeception.com/docs/03-AcceptanceTests)).
 
 Here is probably the most basic test class we can write to give you a starting point:
 <pre>
