@@ -1,4 +1,4 @@
-# 1 Day for most static assets
+# 4 weeks for most static assets - must revalidate
 <filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
-Header set Cache-Control "max-age=86400, public"
+Header set Cache-Control "max-age=2419200, public, must-revalidate"
 </filesMatch>
