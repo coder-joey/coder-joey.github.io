@@ -10,24 +10,6 @@
 
       gtag('config', 'UA-119540585-1');
     </script>
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "headline": "{{ page.title }}",
-        "datePublished": "{{ page.date | date: "%Y-%e-%B" }}",
-        "dateModified": "2015-02-05T09:20:00+08:00",
-        "author": {
-          "@type": "Person",
-          "name": "John Doe"
-        },
-         "publisher": {
-          "@type": "Person",
-          "name": "Joey Gilham"
-        },
-        "description": "{{ page.excerpt| strip_html }}"
-      }
-    </script>
     <title>{% if page.title %}{{ page.title }} – {% endif %}Coder Joey</title>
 
     {% include meta.html %}
