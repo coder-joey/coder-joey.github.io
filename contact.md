@@ -7,11 +7,11 @@ permalink: /contact/
 Drop me an email with any queries, complaints or suggestions:
 
 <form action="https://formspree.io/joey@pie.co.de" method="POST">
-<label for="name">Name</label>
+<label for="name">Name <span class="red">*</span></label>
 <input type="text" name="name" required>
-<label for="_replyto">Email</label>
+<label for="_replyto">Email <span class="red">*</span></label>
 <input type="email" name="_replyto" required>
-<label for="message">Message</label>
+<label for="message">Message <span class="red">*</span></label>
 <input type="textarea" name="message" required>
 <input type="submit" value="Send">
 </form>
