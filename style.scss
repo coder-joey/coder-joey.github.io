@@ -128,6 +128,19 @@ pre {
 
 }
 
+label {
+  display: block;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+  margin: 0.5% auto 2%;
+  padding: 1%;
+  text-align: center;
+  font-size: 1.1em;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
