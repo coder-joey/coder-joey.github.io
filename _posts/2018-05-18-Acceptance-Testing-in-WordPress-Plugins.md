@@ -16,9 +16,7 @@ Within my plugin I have an aptly named __tests__ directory which has the followi
 <pre>
 {
     "require-dev": {
-        "lucatume/wp-browser": "~1.21",
-        "codeception/codeception": "2.*",
-        "phpunit/phpunit": "6.*"
+        "lucatume/wp-browser": "*"
     },
     "scripts": {
         "post-install-cmd": [
@@ -31,6 +29,7 @@ Within my plugin I have an aptly named __tests__ directory which has the followi
 }
 </pre>
 At the time of writing, the latest versions of Codeception, PHPUnit and PHPUnitWrapper were not playing nice together so I have my PHPUnit version rolled back a little bit until this is patched.
+EDIT: After playing about with different versions of Codeception and PHPUnit I discovered that WP-Browser actually includes everything it requires so this further simplifies the composer.json file
 
 I also have a little script which just pulls in the current version of ChromeDriver and moves it to my vendor/bin directory (this will be created in the next step!) and runs ChromeDriver (not yet needed and will be mentioned later!)
 My `run.sh` script looks like this (depending on your system and current version you can alter the URL as required):
