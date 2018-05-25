@@ -156,6 +156,13 @@ input[type="submit"] {
   width: 150px;;
 }
 
+textarea {
+  display: block;
+  margin: 0.5% auto 2%;
+  padding: 1%;
+  font-size: 1.1em;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;

@@ -12,6 +12,6 @@ Drop me an email with any queries, complaints or suggestions:
 <label for="_replyto">Email <span class="red">*</span></label>
 <input type="email" name="_replyto" required>
 <label for="message">Message <span class="red">*</span></label>
-<textarea rows="4" cols="50" name="message" required></textarea>
+<textarea rows="10" cols="50" name="message" required></textarea>
 <input type="submit" value="Send">
 </form>
