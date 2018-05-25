@@ -4,11 +4,14 @@ title: Get in touch
 permalink: /contact/
 ---
 
-Get in touch with any queries, complaints or suggestions:
+Drop me an email with any queries, complaints or suggestions:
 
 <form action="https://formspree.io/joey@pie.co.de" method="POST">
+<label for="name">Your Name</label>
 <input type="text" name="name">
+<label for="_replyto">Email</label>
 <input type="email" name="_replyto">
-<input type="textarea" name="query">
+<label for="message">Message</label>
+<input type="textarea" name="message">
 <input type="submit" value="Send">
 </form>
