@@ -139,7 +139,8 @@ input {
   padding: 1%;
   text-align: center;
   font-size: 1.1em;
-  min-width: 300px;
+  width: 300px;
+  max-width: 100%;
 }
 
 input:focus,
@@ -164,6 +165,7 @@ textarea {
   padding: 1%;
   font-size: 1.1em;
   border: 1px solid #ddd;
+  max-width: 100%;
 }
 
 // Fixes images in popup boxes from Google Translate
