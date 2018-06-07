@@ -22,6 +22,6 @@ tests export-ignore
 tests/** export-ignore
 </pre>
 
-One important thing to note is that when excluding an entire directory just the directory name plus a forward slash e.g. *tests/* doesn't cut it, you instead need to use `tests/**`
+One important thing to note is that when excluding an entire directory just the directory name plus a forward slash e.g. 'tests/' doesn't cut it, you instead need to use `tests/**`
 
 And that's it! Clean up those releases!
